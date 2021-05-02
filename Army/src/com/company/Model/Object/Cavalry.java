@@ -28,7 +28,7 @@ public class Cavalry extends Soldier {
 
     @Override
     public void defense() {
-        System.out.println(this.getName()+" gets behind shields of swordsmen and throws spear from a far!");
+        System.out.println(this.getName()+" rides his horse to far away from the enemy!");
     }
 
 

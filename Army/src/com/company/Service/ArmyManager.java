@@ -37,9 +37,9 @@ public class ArmyManager {
                 new Swordsman("Swordsman 1", 25, 50, 25, 55),
                 new Swordsman("Swordsman 2", 35, 80, 60, 60),
                 new Swordsman("Swordsman 3", 40, 40, 45, 50),
-                new Cavalry("Spearman 1", 40, 20, 120, 50),
-                new Cavalry("Spearman 2", 35, 20, 110, 75),
-                new Cavalry("Spearman 3", 45, 25, 95, 45)
+                new Cavalry("Cavalry 1", 40, 20, 120, 50),
+                new Cavalry("Cavalry 2", 35, 20, 110, 75),
+                new Cavalry("Cavalry 3", 45, 25, 95, 45)
         ).collect(Collectors.toList());
 
         return new Army(commander, soldiers);
