@@ -38,6 +38,10 @@ also implement the interface and override the methods.
 
 Finally create a class called Army which has a commander and a list of soldiers.
 
+##How to run
+
+Just clone the repository and run the main function in `Main.class`.
+
 ##Let's Experiment
 
 After finishing the POJO's lets make some experiments. First of all, I created a class called
