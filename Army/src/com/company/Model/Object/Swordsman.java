@@ -1,6 +1,6 @@
-package com.company.Soldier.Object;
+package com.company.Model.Object;
 
-import com.company.Soldier.Abstract.Soldier;
+import com.company.Model.Abstract.Soldier;
 
 public class Swordsman extends Soldier {
 
@@ -28,7 +28,7 @@ public class Swordsman extends Soldier {
 
     @Override
     public void defense() {
-        System.out.println(this.getName()+" uses his shiled!");
+        System.out.println(this.getName()+" uses his shield!");
     }
 
     @Override

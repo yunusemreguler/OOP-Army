@@ -1,7 +1,7 @@
-package com.company.Soldier.Interface;
+package com.company.Model.Interface;
 
 
-import com.company.Soldier.Abstract.Soldier;
+import com.company.Model.Abstract.Soldier;
 
 import java.util.List;
 

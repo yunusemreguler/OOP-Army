@@ -1,4 +1,4 @@
-package com.company.Soldier.Abstract;
+package com.company.Model.Abstract;
 
 public abstract class Soldier  {
 

@@ -1,12 +1,12 @@
-package com.company.Soldier.Object;
+package com.company.Model.Object;
 
-import com.company.Soldier.Abstract.Soldier;
+import com.company.Model.Abstract.Soldier;
 
-public class Spearman extends Soldier {
+public class Cavalry extends Soldier {
 
     private int throwPoint;
 
-    public Spearman(String name, int attackPoint, int defensePoint, int experiencePoint, int throwPoint){
+    public Cavalry(String name, int attackPoint, int defensePoint, int experiencePoint, int throwPoint){
         super(name,attackPoint,defensePoint,experiencePoint);//super statement allows us to inherit attributes of Soldier class
         this.throwPoint = throwPoint;
     }

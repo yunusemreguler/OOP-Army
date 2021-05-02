@@ -1,6 +1,6 @@
-package com.company.Soldier.Object;
+package com.company.Model.Object;
 
-import com.company.Soldier.Abstract.Soldier;
+import com.company.Model.Abstract.Soldier;
 
 public class Archer extends Soldier {
 

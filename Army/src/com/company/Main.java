@@ -1,10 +1,8 @@
 package com.company;
 
-import com.company.Function.ArmyCreator;
-import com.company.Function.ArmyPrinter;
-import com.company.Function.CommanderFinder;
-import com.company.Soldier.Abstract.Soldier;
-import com.company.Soldier.Object.*;
+import com.company.Service.ArmyManager;
+import com.company.Model.Abstract.Soldier;
+import com.company.Model.Object.*;
 
 import java.util.List;
 import java.util.Scanner;
@@ -13,20 +11,17 @@ public class Main {
 
     public static void main(String[] args) {
 
-        ArmyCreator creator = new ArmyCreator();
-        List<Soldier> army = creator.createArmy();//Creating the army using an ArmyCreator object and storing it inside a list
+        ArmyManager manager = ArmyManager.getInstance();
 
-        CommanderFinder commanderFinder = new CommanderFinder();
-        Commander commander = commanderFinder.findCommander(army);//Find the commander inside the army and use him to command soldiers
-
-        ArmyPrinter armyPrinter = new ArmyPrinter();//Create an instance of Army Printer class to use it for printing army
+        Army army = manager.createArmy();
+        Commander commander = army.getCommander();
+        List<Soldier> soldiers = army.getSoldiers();
 
         Scanner scanner = new Scanner(System.in);
         String input ;
 
         //A simple switch case statement for experimenting
         //and understanding how it works
-
         do{
             System.out.println("You are the commander. Choose what you want to do with your army :" +
                     "\n1.Attack\n2.Defense\n3.Train\n4.Print Army\n5.Exit");
@@ -37,16 +32,16 @@ public class Main {
             {
                 switch (input) {
                     case "1":
-                        commander.commandToAttack(army);
+                        commander.commandToAttack(soldiers);
                         break;
                     case "2":
-                        commander.commandToDefense(army);
+                        commander.commandToDefense(soldiers);
                         break;
                     case "3":
-                        commander.commandToTrain(army);
+                        commander.commandToTrain(soldiers);
                         break;
                     case "4":
-                        armyPrinter.printArmy(army);
+                        manager.printArmyAttributes(army);
                         break;
                 }
             }

@@ -1,7 +1,7 @@
-package com.company.Soldier.Object;
+package com.company.Model.Object;
 
-import com.company.Soldier.Abstract.Soldier;
-import com.company.Soldier.Interface.CommanderBehaviour;
+import com.company.Model.Abstract.Soldier;
+import com.company.Model.Interface.CommanderBehaviour;
 
 import java.util.List;
 
@@ -51,24 +51,18 @@ public class Commander extends Soldier implements CommanderBehaviour{
     }
 
     @Override
-    public void commandToAttack(List<Soldier> soldierList){
-        for(int i = 0;i<soldierList.size();i++){
-            soldierList.get(i).attack();
-        }
+    public void commandToAttack(List<Soldier> soldiers){
+        soldiers.forEach(Soldier::attack);
     }
 
     @Override
-    public void commandToDefense(List<Soldier> soldierList) {
-        for(int i = 0;i<soldierList.size();i++){
-            soldierList.get(i).defense();
-        }
+    public void commandToDefense(List<Soldier> soldiers) {
+        soldiers.forEach(Soldier::defense);
     }
 
     @Override
-    public void commandToTrain(List<Soldier> soldierList) {
-        for(int i = 0;i<soldierList.size();i++){
-            soldierList.get(i).train();
-        }
+    public void commandToTrain(List<Soldier> soldiers) {
+        soldiers.forEach(Soldier::train);
     }
 
 }
