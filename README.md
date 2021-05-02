@@ -9,7 +9,7 @@ there are different types of soldiers and they have skills such as attacking def
 You will be the commander of an army and command your soldiers as you wish. Sounds like a great example
 to understand SOLID.
 
-##Soldier
+## Soldier
 There are attributes which are common for all types of soldiers such as name, attackPoint etc.
 Also they have common behaviors like attack, defense etc. 
 Why don't we just create an abstract class called Soldier and put these common attributes and
@@ -38,7 +38,7 @@ also implement the interface and override the methods.
 
 Finally create a class called Army which has a commander and a list of soldiers.
 
-##How to run
+## How to run
 
 Just clone the repository and run the main function in `Main.class`.
 
@@ -69,7 +69,7 @@ But thanks to OOP each different type invokes it own implementation of `attack()
 What if I want to create a new type of soldier ? Just extend the Soldier class and throw
 it into the list. You don't need to change any code.
 
-##Conclusion
+## Conclusion
 
 For the future of any project which includes OOP must follow SOLID principles.
 I hope this little project helps people to understand OOP and SOLID more.
