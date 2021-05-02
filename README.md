@@ -42,7 +42,7 @@ Finally create a class called Army which has a commander and a list of soldiers.
 
 Just clone the repository and run the main function in `Main.class`.
 
-##Let's Experiment
+## Let's Experiment
 
 After finishing the POJO's lets make some experiments. First of all, I created a class called
 ArmyManager to handle plumbing stuff which are CreatingArmy and printAttributes. This class will
